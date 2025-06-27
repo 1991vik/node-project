@@ -8,6 +8,8 @@ function messageConstants() {
     const USER_NOT_FOUND = "User not found.";
     const PASSWORD_NOT_MATCH = "You have entered wrong password.";
     const LOGIN_SUCCESS = "User successfully logged in.";
+    const INVALID_CREDENTIALS = "Invalid credentials.";
+    const INVALID_TOKEN = "Invalid Token";
 
     return { 
                 MISSING_REGISTRATION_FIELDS,
@@ -18,7 +20,9 @@ function messageConstants() {
                 REGESTRATION_SUCCESS,
                 USER_NOT_FOUND,
                 PASSWORD_NOT_MATCH,
-                LOGIN_SUCCESS
+                LOGIN_SUCCESS,
+                INVALID_CREDENTIALS,
+                INVALID_TOKEN
             }
 }
 
