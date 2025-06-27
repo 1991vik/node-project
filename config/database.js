@@ -1,4 +1,4 @@
-import { Sequelize, Op } from 'sequelize';
+import { Sequelize, Op, DataTypes } from 'sequelize';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -14,4 +14,4 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, proces
     console.error('Unable to connect to the database:', error);
   }
   
-  export { sequelize, Op } ; 
+  export { sequelize, Op, DataTypes } ; 
