@@ -1,5 +1,4 @@
-import { DataTypes } from 'sequelize';
-import { sequelize, Op } from '../config/database.js';
+import { sequelize, Op, DataTypes } from '../config/database.js';
 
 const User = sequelize.define('Users', {
     first_name: {
@@ -27,6 +26,11 @@ const User = sequelize.define('Users', {
         type: DataTypes.TINYINT,
         allowNull: false,
         defaultValue: 1
+    },
+    active_token: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+        defaultValue: null
     },
     status: {
         type: DataTypes.ENUM("0","1"),
