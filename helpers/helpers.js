@@ -1,5 +1,3 @@
-import sequelize from '../config/database.js';
-
 function isValidUsername(username) {
     const usernameRegex = /^[a-zA-Z0-9_]+$/;
     return usernameRegex.test(username);

@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../config/database.js';
+import { sequelize, Op } from '../config/database.js';
 
 const User = sequelize.define('Users', {
     first_name: {
@@ -31,7 +31,7 @@ const User = sequelize.define('Users', {
     status: {
         type: DataTypes.ENUM("0","1"),
         allowNull: false,
-        defaultValue: "1"
+        defaultValue: "0"
     }
 }, {
     tableName: 'users',
@@ -39,4 +39,4 @@ const User = sequelize.define('Users', {
     underscored: true 
 });
 
-export default User;
+export { User, Op };
